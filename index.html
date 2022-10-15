@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Steuer-Rechner</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main"> 
+        <h1>Steuer-Rechner</h1>
+        <div id="income">
+            <h2>Einkommen</h2>
+            <form action="index.html" method="post">
+                <label for="income">Einkommen</label>
+                <input type="number" name="income" id="income" placeholder="Einkommen">
+                <input type="number" name="Tax-class" id="Tax-class" placeholder="Steuerklasse">
+            </form>
+        </div>
+        <div id="gov-expense">
+            <h2>Staatliche Ausgaben</h2>
+            <form action="index.html" method="post">
+                <label for="gov-expense">Staatliche Ausgaben</label>
+                <input type="number" name="gov-expense" id="gov-expense" placeholder="Staatliche Ausgaben">
+            </form>
+        </div>
+        <div id="output">
+            <h2>Ergebnis</h2>
+            <form action="index.html" method="post">
+                <p>Du zahlst so viel dafür:</p>
+                <p id="result">xx</p>
+            </form>
+        </div>
+        </div>
