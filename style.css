@@ -1,0 +1,9 @@
+/* set div with id income to be background-color red */
+#income {
+    background-color: red;
+}
+
+/* set div with id output to be background-color purple */
+#output {
+    background-color: #ff9dff
+}

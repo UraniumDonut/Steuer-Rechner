@@ -3,6 +3,7 @@
         <title>Steuer-Rechner</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <div id="main"> 
@@ -11,7 +12,8 @@
             <h2>Einkommen</h2>
             <form action="index.html" method="post">
                 <label for="income">Einkommen</label>
-                <input type="number" name="income" id="income" placeholder="Einkommen">
+                <input type="number" name="income" id="income-number" placeholder="Einkommen">
+                <label for ="Tax-class">Steuerklasse</label>
                 <input type="number" name="Tax-class" id="Tax-class" placeholder="Steuerklasse">
             </form>
         </div>
@@ -19,11 +21,12 @@
             <h2>Staatliche Ausgaben</h2>
             <form action="index.html" method="post">
                 <label for="gov-expense">Staatliche Ausgaben</label>
-                <input type="number" name="gov-expense" id="gov-expense" placeholder="Staatliche Ausgaben">
+                <input type="number" name="gov-expense" id="gov-expense-number" placeholder="Staatliche Ausgaben">
             </form>
         </div>
         <div id="output">
             <h2>Ergebnis</h2>
+            <button onclick="calculate()">Berechnen</button>
             <form action="index.html" method="post">
                 <p>Du zahlst so viel dafür:</p>
                 <p id="result">xx</p>
